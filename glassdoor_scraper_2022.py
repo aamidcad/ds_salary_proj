@@ -21,8 +21,6 @@ def fetch_jobs(keyword, num_pages):
     time.sleep(2)
     
     
-    
-    
     company_name = []
     job_title = []
     salary_est = []
@@ -86,7 +84,7 @@ def fetch_jobs(keyword, num_pages):
                 #Scrape 
                 
                 try:
-                    salary_estimate.append(driver.find_element(By.XPATH, "//div[@class='css-1d4p0fd e2u4hf18']").text)
+                    salary_estimate.append(driver.find_element(By.XPATH, "//div[@class='css-y2jiyn e2u4hf18']").text)
                 except:
                     salary_estimate.append("#N/A")
                     pass
